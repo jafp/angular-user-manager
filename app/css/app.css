@@ -1,0 +1,17 @@
+
+.header {
+	padding-top: 6px;
+}
+
+.brand {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.brand a {
+	color: #666;
+}
+
+.selected td {
+	background-color: #ccc !important;
+}

@@ -1,0 +1,18 @@
+<div>
+	<table class="table">
+		<tbody>
+			<tr>
+				<th><span t="id"></span></t>
+				<td>{{ user.id }}</td>
+			</tr>
+			<tr>
+				<th><span t="name"></span></t>
+				<td>{{ user.firstname + ' ' + user.lastname }}</td>
+			</tr>
+			<tr>
+				<th><span t="roles"></span></t>
+				<td>{{ user.roles.join(', ') }}</td>
+			</tr>
+		</tbody>
+	</table>
+</div>

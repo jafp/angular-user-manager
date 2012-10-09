@@ -1,0 +1,59 @@
+
+<div class="btn-group" style="margin-bottom:10px">
+	<button class="btn" ng-click="new()">
+		<i class="icon-plus"></i> <span t="button.new"></span>
+	</button>
+	
+	<button class="btn ng-class: {disabled: selected == null};" ng-disabled="selected == null" ng-click="edit()">
+		<i class="icon-pencil"></i> <span t="button.edit"></span>
+	</button>
+
+	<button class="btn ng-class: {disabled: selected == null};" ng-disabled="selected == null" ng-click="delete()">
+		<i class="icon-remove"></i> <span t="button.delete"></span>
+	</button>
+
+	<button class="btn ng-class: {disabled: selected == null};" ng-disabled="selected == null" ng-click="view()">
+		<i class="icon-search"></i> <span t="button.view"></span>
+	</button>
+</div>
+
+<table class="table table-bordered table-hover">
+	<colgroup>
+		<col style="width:10%" />
+		<col style="width:30%" />
+		<col style="width:30%" />
+		<col style="width:30%" />
+	</colgroup>
+	<thead>
+		<tr>
+			<th>
+				<span t="id"></span>
+			</th>
+			<th>
+				<span t="firstname"></span>
+			</th>
+			<th>
+				<span t="lastname"></span>
+			</th>
+			<th>
+				<span t="roles"></span>
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="user in users" ng-click="select(user)" ng-class="{selected: user.selected}">
+			<td>
+				{{ user.id }}
+			</td>
+			<td>
+				{{ user.firstname }}
+			</td>
+			<td>
+				{{ user.lastname }}
+			</td>
+			<td>
+				<span roles="user.roles"></span>
+			</td>
+		</tr>
+	</tbody>
+</table>

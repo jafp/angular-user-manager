@@ -1,0 +1,31 @@
+<div ng-controller="UserPopupCtrl">
+	<form name="form" class="form-horizontal" ng-submit="ok()">
+		<div class="control-group">
+			<label class="control-label" t="firstname"></label>
+			<div class="controls">
+				<input name="firstname" type="text" ng-model="user.firstname" required />
+				<span class="help-inline" ng-show="form.firstname.$error.required" t="validation.required"></span>
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" t="lastname"></label>
+			<div class="controls">
+				<input name="lastname" type="text" ng-model="user.lastname" required />
+				<span class="help-inline" ng-show="form.lastname.$error.required" t="validation.required" t-options="{t-name: lastname}"></span>
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" t="roles"></label>
+			<div class="controls">
+				<select name="roles" ng-model="user.roles" ng-multiple="true" multiple="multiple">
+					<option ng-repeat="role in roles" value="{{ role.value }}" ng-selected="role.selected">{{ role.name }}</option>
+				</select>
+				<span class="help-inline">Inline help text</span>
+			</div>
+		</div>
+		<div>
+			<button class="btn" ng-click="cancel()" t="button.cancel"></button>
+			<button type="submit" class="btn btn-primary" ng-disabled="form.$invalid" t="button.ok"></button>
+		</div>
+	</form>
+</div>

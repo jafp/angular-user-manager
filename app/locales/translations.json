@@ -1,0 +1,67 @@
+setTranslations(
+{
+	"en-us": 
+	{
+		"usermanager": "User Manager",
+		"users": "Users",
+		"user": "User",
+		"new_user": "New User",
+		"view_user": "View User",
+		"settings": "Settings",
+		"id": "Id",
+		"firstname": "First name",
+		"lastname": "Last name",
+		"name": "Name",
+		"roles": "Roles",
+		"role":
+		{
+			"user": "User",
+			"admin": "Admin",
+			"manager": "Manager"
+		},
+		"button": 
+		{
+			"ok": "OK",
+			"cancel": "Cancel"
+		},
+		"validation":
+		{
+			"required": "Required"
+		}
+	},
+	"da-dk":
+	{
+		"usermanager": "Brugermanager",
+		"users": "Brugere",
+		"user": "Bruger",
+		"new_user": "Ny bruger",
+		"view_user": "Vis bruger",
+		"edit_user": "Rediger bruger",
+		"settings": "Indstilliger",
+		"id": "Id",
+		"firstname": "Fornavn",
+		"lastname": "Efternavn",
+		"name": "Navn",
+		"roles": "Roller",
+		"role":
+		{
+			"user": "Bruger",
+			"admin": "Administrator",
+			"manager": "Manager"
+		},
+		"button": 
+		{
+			"ok": "OK",
+			"cancel": "Annuller",
+			"new": "Ny",
+			"edit": "Rediger",
+			"delete": "Slet",
+			"view": "Vis"
+		},
+		"validation":
+		{
+			"required": "Påkrævet"
+		}	
+	}
+}
+);
